@@ -12,88 +12,127 @@
 </head>
 
 <body>
-    <h1>My Potfolio Website</h1>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="#my-projects">My Projects</a></li>
-            <li><a href="#tech-skills">Skills</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#inprogress-projects">Projects Inprogress</a></li>
-            <li><a href="#">Hire Me</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>My Potfolio Website</h1>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li><a href="#my-projects">My Projects</a></li>
+                <li><a href="#tech-skills">Skills</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#inprogress-projects">Projects Inprogress</a></li>
+                <li><a href="#">Hire Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <hr>
-    <section id="my-projects">
-        <h2>Portfolio website</h2>
-        <p>This is a new <em>portfolio website</em></p>
-        <img src="img/html_logo_300x300.png" alt="HTML 5 LOGO" title="I am Learning HTML 5" width="300" height="300">
-        <figure>
-            <figcaption>This is a sample HTML code</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello world&lt;h1&gt;</code>
-            </p>
-        </figure>
+    <main>
+        <article id="my-projects">
+            <h2>Portfolio website</h2>
+            <p>This is a new <em>portfolio website</em></p>
+            <section>
+                <h3>HTML5 Learning</h3>
+                <img src="img/html_logo_300x300.png" alt="HTML 5 LOGO" title="I am Learning HTML 5" width="300"
+                    height="300">
+                <figure>
+                    <figcaption>This is a sample HTML code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello world&lt;h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
 
-        <h3>My projects</h3>
-        <p> Project Highlights: </p>
+            <section>
+                <h3>My projects</h3>
+                <p> Project Highlights: </p>
 
-        <ol>
-            <li>...Todoist.com clone</li>
-            <li>...Youtube.com clone</li>
-            <li>...dexscreener.com clone</li>
-            <li>...Main resources for the projects is
-                <abbr title="Content Delivery Network">
-                    <a href="https://developer.mozilla.org/">CDN</a>
-                </abbr>.
-            </li>
-        </ol>
-    </section>
-    <hr>
+                <ol>
+                    <li>...Todoist.com clone</li>
+                    <li>...Youtube.com clone</li>
+                    <li>...dexscreener.com clone</li>
+                    <li>...Main resources for the projects is
+                        <abbr title="Content Delivery Network">
+                            <a href="https://developer.mozilla.org/">CDN</a>
+                        </abbr>.
+                    </li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark> number of hours</mark> i code a day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3
+                                hours</time> for every morning</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+        <hr>
 
-    <section id="tech-skills">
-        <h3>Tech Skills</h3>
-        <p>Tech skills used for the portfolio projects:</p>
+        <article id="tech-skills">
+            <h2>Technology Known</h2>
+            <section>
+                <h3>Tech Skills</h3>
+                <p>Tech skills used for the portfolio projects:</p>
 
-        <figure>
-            <img src="img/caribbean.jpg" alt="Caribbean Image" width="400" height="225" title="This is carribian sea" loading="lazy">
-            <figcaption>Carribean Sea Beach</figcaption>
-        </figure>
-        
-        <ul>
-            <li>...NextJs</li>
-            <li>...Nodejs</li>
-            <li>...MongoDB</li>
-        </ul>
-        <strong>Full stack Development</strong>
-</section>
+                <figure>
+                    <img src="img/caribbean.jpg" alt="Caribbean Image" width="400" height="225"
+                        title="This is carribian sea" loading="lazy">
+                    <figcaption>Carribean Sea Beach</figcaption>
+                </figure>
+
+                <ul>
+                    <li>...NextJs</li>
+                    <li>...Nodejs</li>
+                    <li>...MongoDB</li>
+                </ul>
+                <strong>Full stack Development</strong>
+            </section>
+        </article>
 
         <hr>
-<section id="about-me">
-        <h4>About Me</h4>
-        <address>
-            No.17/7 vallal pari street,
-            Mgr nagar,
-            chennai-78.
-        </address>
-    </section>
+        <article id="about-me">
+            <h2>Brief About Me</h2>
+            <section>
+                <h3>About Me</h3>
+                <address>
+                    No.17/7 vallal pari street,
+                    Mgr nagar,
+                    chennai-78.
+                </address>
+            </section>
+        </article>
         <hr>
-<section id="inprogress-projects">
-        <h5>Projects InProgress</h5>
-        <dl>
-            <dt>Testimonial creation</dt>
-            <dd>This is testimonial creation project for the clients accessing</dd>
 
-            <dt>useproof.com</dt>
-            <dd>This is a proof creation project for the clients</dd>
-        </dl>
-    </section>
+        <article id="inprogress-projects">
+            <h2>Current Projects</h2>
+            <section>
+                <h5>Projects InProgress</h5>
+                <figure>
+                    <img src="img/vacation.jpg" alt="Vacation image" title="Thailand Beach" width="400" height="228"
+                        loading="lazy">
+                    <figcaption>Vacation image in Thailand</figcaption>
+                </figure>
+
+                <dl>
+                    <dt>Testimonial creation</dt>
+                    <dd>This is testimonial creation project for the clients accessing</dd>
+
+                    <dt>useproof.com</dt>
+                    <dd>This is a proof creation project for the clients</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+
     <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html" target="_blank">Mohamed Eliyas</a> &gt;&gt;&gt;
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html" target="_blank">Mohamed Eliyas</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
 </body>
 
 </html>
