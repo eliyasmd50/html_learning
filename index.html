@@ -20,7 +20,7 @@
                 <li><a href="#tech-skills">Skills</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#inprogress-projects">Projects Inprogress</a></li>
-                <li><a href="#">Hire Me</a></li>
+                <li><a href="#contact">Hire Me</a></li>
             </ul>
         </nav>
     </header>
@@ -64,6 +64,53 @@
                                 hours</time> for every morning</p>
                     </details>
                 </aside>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                            </td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td>
+                                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                            </td>
+                            <td>Eat Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                            </td>
+                            <td>Study for Interviews</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All other times</td>
+                            <td>Free time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">And in my weekEnd i play <mark>Football</mark> for my entertainment</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </section>
         </article>
         <hr>
@@ -121,6 +168,77 @@
                     <dd>This is a proof creation project for the clients</dd>
                 </dl>
             </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Hire Me</h2>
+            <p>I'd Really Like to hear you</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Jhon" autocomplete="on" autofocus required>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="doe" autocomplete="on"  required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="9123456789" 
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p>
+                <p>
+                    <label for="decade">Favourite Decade: </label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">Favourite coffee :</label>
+                    <select name="coffee" id="coffee" multiple size="5">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso Drinks">
+                            <option value="espresso" selected>Espresso</option>
+                            <option value="latte">Latte</option>
+                            <option value="americano">Americano</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <!-- <p>
+                    <label for="coffee">Favourite coffee:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee">
+                        <option value="latte">
+                        <option value="espresso">
+                        <option value="americano">
+                        <option value="other">
+                    </datalist>
+                </p> -->
+            </fieldset>
+            <fieldset>
+                <legend>What is your favourite food?</legend>
+                <p>
+                    <input type="radio" name="food" id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            </form>
         </article>
     </main>
 
