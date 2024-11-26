@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light and dark mode</title>
+    <style>
+        body {
+            background-color: burlywood;
+            
+        }
+    </style>
+</head>
+<body id="body">
+    <form >
+        <label for="modeswitch">Dark or light mode</label>
+        <input type="checkbox" id="modeswitch" value="light" focus onchange=handleClick()>
+    </form>
+    <script>
+        function handleClick() {
+            let body = document.getElementById("body");
+            const modeswitch = document.getElementById("modeswitch");
+            const currentMode = modeswitch.value;
+
+            if(modeswitch.checked){
+                sessionStorage.setItem("mode", "dark");
+                body.style.cssText = "background-color:black; color: #fff;";
+                modeswitch.setAttribute('value', 'dark')
+                console.log(modeswitch.value);
+            } else if(sessionStorage.getItem("mode") === "dark") {
+                sessionStorage.setItem("mode", "light")
+                body.style.cssText = "background-color:burlywood; color: #000;";
+                modeswitch.setAttribute('value', 'light')
+                console.log(modeswitch.value);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,4 +1,21 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    font-size: 22px;
+    border: 2px solid black;
+}
+
+h1, h2 {
+    color: blue;
+}
+
 p {
-    font-size: 64px;
-    color: purple;
+    color: grey;
+}
+
+.highlight {
+    background-color: gold;
+    text-transform: uppercase;
 }
