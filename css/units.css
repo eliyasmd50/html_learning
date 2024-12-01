@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* we can use it in the button for this kind of styling of font size of em in the padding */
+h1 {
+    width: 50%;
+    border: 2px dashed red;
+    font-size: 3rem;
+    padding: 0.5em;/*  based on the rem it will set the padding this is the place to use 'em' */
+}
+
+main {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    width: 40ch;
+}
